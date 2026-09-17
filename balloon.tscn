@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dx3htu1co102d"]
+
+[ext_resource type="Texture2D" uid="uid://do52cpi1qnsvm" path="res://hd-red-vector-balloon-fly-png-704081695127352tdybgh5kjx.png" id="1_n2rxu"]
+[ext_resource type="Script" uid="uid://c3f42x8krvdqc" path="res://balloon.gd" id="1_r345k"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1vivr"]
+radius = 221.84
+
+[node name="Balloon" type="Area2D" unique_id=1396048358 groups=["balloons"]]
+position = Vector2(909, 285)
+script = ExtResource("1_r345k")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1185534755]
+position = Vector2(1.000061, 34)
+scale = Vector2(0.1925, 0.1925)
+texture = ExtResource("1_n2rxu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1257831093]
+position = Vector2(0, 1.5258789e-05)
+scale = Vector2(0.1925, 0.1925)
+shape = SubResource("CircleShape2D_1vivr")
